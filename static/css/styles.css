@@ -96,7 +96,7 @@ body {
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .row::after {
@@ -183,21 +183,6 @@ body {
     padding: 5px;
 }
 
-.section-text {
-}
-
-.section-header {
-
-}
-
-.section-description {
-
-}
-
-.section-image {
-    
-}
-
 /* home */
 
 #home-content {
@@ -232,8 +217,8 @@ body {
     box-sizing: border-box;
 }
 
-.step {
-    text-align: center;
+.step ul{
+    list-style: none;
 }
 
 .step-description {
@@ -252,6 +237,14 @@ body {
 
 /* footer */
 
-footer {
-    background-color: #bf0000;
+#footer {
+    background-color: #E8E8E8;
+}
+
+#footer li {
+    text-align: left;
+}
+
+.footer-text {
+    text-align: center;
 }
