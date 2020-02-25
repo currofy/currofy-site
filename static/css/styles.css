@@ -81,6 +81,31 @@ body {
     align-items: center;
 }
 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 /* Navbar */
 #navbar {
     position: fixed;
@@ -191,6 +216,34 @@ body {
 }
 
 /* end why */
+
+/* how it works */
+#how-it-works {
+    padding: 200px 50px;
+}
+
+#steps {
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+.step {
+    text-align: center;
+}
+
+.step-description {
+    margin-top: 20px;
+}
+/* end how it works*/
+
+#bottom-button {
+    margin-top: 100px;
+}
+
+.button-lg {
+    font-size:28px;
+    padding:20px 30px;
+}
 
 /* footer */
 
