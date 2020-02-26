@@ -110,9 +110,24 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    transition: 0.4s;   
+}
+
+.navbar-not-scrolled {
     color: white; 
     z-index: 1;
+    background-color: white;
+    transition: background-color 0.01s ease-out;
+}
+
+.navbar-scrolled {
+    color: white; 
+    z-index: 1;
+    background-color: white;
+    transition: background-color 0.01s ease-out;
+    border-bottom: solid 1px whitesmoke;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .navbar-items-list {    
