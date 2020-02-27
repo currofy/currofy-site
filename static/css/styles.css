@@ -1,7 +1,20 @@
+:root {
+/* 
+https://paletton.com/#uid=13v0u0k32a+2sne2Lha4u3BdX4t
+https://www.canva.com/colors/color-palette-generator/
+ */
+--color-primary: #333638;
+--color-secondary: #E24338;
+--color-primary-light: #6E7376; 
+--color-gray: #949489;
+--color-beige: #EDE5D0;
+}
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: "Source Code Pro", serif, -apple-system;
+    font-family: "Opens Sans", Helvetica, sans-serif, -apple-system;
     box-sizing: border-box;
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -11,6 +24,19 @@
 
 body {
     background-color: #FFFFFF;
+}
+
+h1 {
+    font-family: "Source Code Pro", Helvetica, sans-serif, -apple-system;
+    font-size: 56px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 28px;
+}
+.keyword { 
+    color: var(--color-secondary);
 }
 
 .container {
@@ -39,24 +65,25 @@ body {
 }
 
 .primary-button {
-    box-shadow: inset 0px 1px 0px 0px #cf866c;
-    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
-    background-color: #d0451b;
+    box-shadow: inset 0px 1px 0px 0px var(--color-gray);
+    background: linear-gradient(to bottom, var(--color-primary-light) 5%, var(--color-primary) 100%);
+    background-color: #505557;
     border-radius: 3px;
-    border: 1px solid #942911;
+   /* border: 1px solid #505557; --> hace un efecto muy feo en el hover*/
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-family: Arial;
-    font-size: 13px;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
     padding: 6px 24px;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #854629;
+    text-shadow: 0px 1px 0px var(--color-gray);
 }
 
 .primary-button:hover {
-    background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
-    background-color: #bc3315;
+    background: linear-gradient(to bottom, var(--color-primary) 5%, var(--color-primary-light) 100%);
+    background-color: var(--color-gray);
 }
 
 .primary-button:active {
@@ -66,6 +93,10 @@ body {
 
 .text-center {
     text-align: center;
+}
+
+.text-left {
+    text-align: left;
 }
 
 .text {
@@ -151,7 +182,7 @@ body {
 
 .navbar-item {
     text-align: center;    
-    padding: 14px 16px;    
+    padding: 12px 16px;    
 }
 
 .navbar-item a {
@@ -196,6 +227,8 @@ body {
 .section-column {
     flex: 33.33%;
     padding: 5px;
+    border: 1px;
+    border-color: #0D1317;
 }
 
 /* home */
@@ -246,8 +279,8 @@ body {
 }
 
 .button-lg {
-    font-size:28px;
-    padding:20px 30px;
+    font-size:18px;
+    padding:15px 30px;
 }
 
 /* footer */
