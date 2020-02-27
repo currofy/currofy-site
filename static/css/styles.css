@@ -241,7 +241,7 @@ p {
 /* home */
 
 #home-content {
-    padding: 200px 50px 100px 50px;
+    padding: 150px 50px 100px 50px;
 }
 
 #home-content p {
@@ -257,14 +257,14 @@ p {
 
 /* why section*/
 #why-section {
-    padding: 200px 0px 100px 0px;
+    padding: 150px 0px 100px 0px;
 }
 
 /* end why */
 
 /* how it works */
 #how-it-works {
-    padding: 200px 50px 100px 50px;
+    padding: 150px 50px 100px 50px;
 }
 
 #steps {
@@ -290,19 +290,24 @@ p {
     padding:15px 30px;
 }
 
+.top-section {
+    margin-top: 50px;
+    padding: 50px;
+}
+
 .mid-section {
-    margin-top: 100px;
     background-color: var(--color-beige);
+    padding: 50px;
 }
 
 .mid-section-light {
-    margin-top: 100px;
     background-color: white;
+    padding: 50px;
 }
 
 /* community section*/
 #community-section {
-    padding: 200px 0px 100px 0px;
+    padding: 150px 0px 100px 0px;
 }
 
 /* end community */
