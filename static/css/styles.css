@@ -231,10 +231,17 @@ p {
     border-color: #0D1317;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 /* home */
 
 #home-content {
-    padding: 200px 50px;
+    padding: 200px 50px 100px 50px;
 }
 
 #home-content p {
@@ -250,14 +257,14 @@ p {
 
 /* why section*/
 #why-section {
-    padding: 300px 50px;
+    padding: 200px 0px 100px 0px;
 }
 
 /* end why */
 
 /* how it works */
 #how-it-works {
-    padding: 200px 50px;
+    padding: 200px 50px 100px 50px;
 }
 
 #steps {
@@ -283,6 +290,23 @@ p {
     padding:15px 30px;
 }
 
+.mid-section {
+    margin-top: 100px;
+    background-color: var(--color-beige);
+}
+
+.mid-section-light {
+    margin-top: 100px;
+    background-color: white;
+}
+
+/* community section*/
+#community-section {
+    padding: 200px 0px 100px 0px;
+}
+
+/* end community */
+
 /* footer */
 
 #footer {
@@ -296,3 +320,4 @@ p {
 .footer-text {
     text-align: center;
 }
+
