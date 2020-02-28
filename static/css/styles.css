@@ -99,12 +99,16 @@ p {
     text-align: left;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .text {
     color: black;
 }
 
 .text-red {
-    color: #d0451b;
+    color: var(--color-secondary);
 }
 
 .row {
@@ -279,6 +283,14 @@ p {
 
 
 /* end home*/
+
+/* Inner sections */
+#inner-content {
+    padding: 100px 50px;
+}
+#inner-content p {
+    padding-top: 50px;
+}
 
 /* why section*/
 #why-section {
