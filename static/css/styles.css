@@ -35,8 +35,13 @@ h1 {
 p {
     font-size: 28px;
 }
-.keyword { 
-    color: var(--color-secondary);
+
+a {
+    text-decoration: none;
+    color: var(--color-beige);
+}
+a:hover{
+    text-decoration: underline;
 }
 
 .container {
