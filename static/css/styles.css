@@ -8,6 +8,7 @@ https://www.canva.com/colors/color-palette-generator/
 --color-primary-light: #6E7376; 
 --color-gray: #949489;
 --color-beige: #EDE5D0;
+--color-green: #2AA015;
 }
 
 
@@ -117,7 +118,10 @@ a:hover{
 }
 
 .text-light{
-    color: var(--color-beige);
+    color: #fff;
+}
+.text-green{
+    color: var(--color-green);
 }
 
 .row {
@@ -279,7 +283,7 @@ a:hover{
 /* home */
 
 #home-content {
-    padding: 50px 0px 100px 0px;
+    padding: 150px 0px 100px 0px;
 }
 
 #home-content p {
@@ -292,14 +296,6 @@ a:hover{
 
 
 /* end home*/
-
-/* Inner sections */
-#inner-content {
-    padding: 100px 50px;
-}
-#inner-content p {
-    padding-top: 50px;
-}
 
 /* why section*/
 #why-section {
@@ -363,11 +359,19 @@ a:hover{
 /* footer */
 
 #footer {
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary);
+    color: #fff;
 }
+
+
+#footer a {
+    font-size: 12px;
+}
+
 
 #footer li {
     text-align: left;
+    padding: 10px;
 }
 
 .footer-text {
@@ -376,3 +380,5 @@ a:hover{
     text-align: center;
 }
 
+  
+  
