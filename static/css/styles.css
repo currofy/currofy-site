@@ -49,7 +49,7 @@
     }
     
     .pad-3 { padding: 3rem; }
-    .pad-10 { padding: 2rem 10rem 2rem 10rem; }
+    .pad-5 { padding: 5rem; }
     
     
     @media (min-width: 768px) {
@@ -72,8 +72,8 @@
     
     .primary-button {
         box-shadow: inset 0px 1px 0px 0px var(--color-gray);
-        background: linear-gradient(to bottom, var(--color-primary-light) 5%, var(--color-primary) 100%);
-        background-color: #505557;
+        background: linear-gradient(to bottom, var(--color-green) 5%, #0b3f02 100%);
+        background-color: #186b09;
         border-radius: 3px;
        /* border: 1px solid #505557; --> hace un efecto muy feo en el hover*/
         display: inline-block;
@@ -84,11 +84,11 @@
         font-weight: 400;
         padding: 6px 24px;
         text-decoration: none;
-        text-shadow: 0px 1px 0px var(--color-gray);
+        /* text-shadow: 0px 1px 0px var(--color-gray); */
     }
     
     .primary-button:hover {
-        background: linear-gradient(to bottom, var(--color-primary) 5%, var(--color-primary-light) 100%);
+        background: linear-gradient(to bottom, #0b3f02 5%, var(--color-green) 100%);
         background-color: var(--color-gray);
     }
     
@@ -353,20 +353,18 @@
     
     /* how it works */
     #how-it-works {
-        padding: 150px 50px 100px 50px;
+        padding: 50px 0px 50px 0px;
     }
     
     #steps {
-        margin-top: 100px;
+        padding: 5rem 7.5rem 0 7.5rem;
         box-sizing: border-box;
     }
-    
-    .step ul{
-        list-style: none;
-    }
-    
     .step-description {
         margin-top: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0 50px 0 50px;
     }
     /* end how it works*/
     
@@ -387,8 +385,7 @@
         text-align: center; 
         border-radius: 10px;  
         width: 45%; 
-        margin: 30px auto 0 auto;
-        padding: 50px 50px;
+        justify-content: space-between;
     }
     
     .entry{

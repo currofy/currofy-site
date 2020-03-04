@@ -1,45 +1,69 @@
 {{ define "content" }}
 <div id="how-it-works" class="container">
-   
-    <h1 class="text-center">Scale your hiring process</h1>
-    
-    <!-- #-->
-    <div class="row pad-10">
-        <div class="section-column col-0">
-            <div class="circle">
-                1
-            </div>   
+    <div class="top-section">
+        <h1 class="text-center">Scale your hiring process</h1>
+        
+        <!-- #-->
+        <div id="steps" class="row">
+            <div class="section-column col-0">
+                <div class="circle">
+                    1
+                </div>   
+            </div>
+            <div class="section-column col-0">
+                <img src="/images/arrow.svg" alt="">
+            </div>
+            <div class="section-column col-0">
+                <div class="circle">
+                    2
+                </div> 
+            </div>
+            <div class="section-column col-0">
+                <img src="/images/arrow.svg" alt="">
+            </div>
+            <div class="section-column col-0">
+                <img src="/images/undraw_astronaut.svg" style="max-width:100%; max-height:100%;">
+            </div>
         </div>
-        <div class="section-column col-0">
-            <img src="/images/Arrow.svg" alt="">
+        <div class="row">
+            <div class="section-column step-description col-0">
+                <p>Talk to one of our experts</p>  
+            </div>
+            <div class="section-column step-description col-0">
+                <p>Engage with qualified talent</p> 
+            </div>
+            <div class="section-column step-description col-0">
+                <p>Onboard the talent you need</p>
+            </div>
         </div>
-        <div class="section-column col-0">
-            <div class="circle">
-                2
-            </div> 
-        </div>
-        <div class="section-column col-0">
-            <img src="/images/Arrow.svg" alt="">
-        </div>
-        <div class="section-column col-0">
-            <img src="/images/undraw_astronaut.svg" style="max-width:100%; max-height:100%;">
-        </div>
-    </div>
-    <div class="row pad-10 text-center">
-        <div class="section-column col-0">
-            <p>Talk to one of our experts</p>  
-        </div>
-        <div class="section-column col-0">
-            <p>Publish brief and challenge to our comunity</p> 
-        </div>
-        <div class="section-column col-0">
-            <p>Find the talent you need</p>
+        <div id="bottom-button" class="text-center pad-3">
+            <button onclick="openModal()" class="primary-button button-lg">Schedule a call now</button>
         </div>
     </div>
 
+    <div class="mid-section">
+        <div class="container">
+            <div class="row">
+                <div class="section-column">
+                    <img src="/images/undraw_video_call_kxyp.svg" style="max-width:100%; max-height:100%;"/>
+                </div>
 
-    <div id="bottom-button" class="text-center">
-        <button onclick="openModal()" class="primary-button button-lg">Start building your team</button>
+                <div class="section-column">
+                    <div>
+                        <h1 class="text-left">A laser-focused hiring process</h1>
+                    </div>
+                    <div class="section-description">
+                        <p class="text-left">We design a <span class="text-red">technical challenge</span> tailored to your tech stack and business needs...</p>
+                        <p class="text-left">...So you interview only <span class="text-red">qualified</span> talent. </p>
+                        <p class="text-left">Scrap CVs...talk code, screen talent based on <span class="text-red">proven</span> tech skills.</p>
+                    </div>
+
+                    <div id="bottom-button" class="text-right">
+                        <button onclick="openModal()" class="primary-button button-lg ">Schedule a call</button>
+                    </div>
+                </div>
+            </div>    
+        </div>
     </div>
 
 </div>
