@@ -17,12 +17,7 @@
         margin: 0;
         padding: 0;
         font-family: "Opens Sans", Helvetica, sans-serif, -apple-system;
-        /* box-sizing: border-box;
-        -o-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box; */
-    }
+   }
     
     body {
         background-color: #FFFFFF;
@@ -127,11 +122,45 @@
     .text-green{
         color: var(--color-green);
     }
+    /* Credits: https://bryanhadaway.com/how-to-create-circles-with-css/# */
+    .circle{
+        width:100px;
+        height:100px;
+        border-radius:50px;
+        font-size:60px;
+        color: var(--color-secondary);
+        line-height:100px;
+        text-align:center;
+        background: var(--color-primary);
+    }
+    /* Arrow --> */
+    .arrow {
+        width: 230px;
+        margin: auto;
+      }
+      
+      .line {
+        margin-top: 14px;
+        width: 200px;
+        background: var(--color-primary);
+        height: 2.5px;
+        float: left;
+      }
+      
+      .point {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 30px solid var(--color-primary);
+        float: right;
+      }
     
     .row {
         display: flex;
     }
     
+    .col-0{width: auto;}
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -144,6 +173,7 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    
     
     [class*="col-"] {
         float: left;
@@ -282,6 +312,7 @@
         padding: 5px;
         border: 1px;
         border-color: #0D1317;
+        margin: auto;
     }
     
     /* home */
