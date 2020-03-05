@@ -29,6 +29,12 @@
         line-height: 1.2;
     }
     
+    h2 {
+        font-family: "Source Code Pro", Helvetica, sans-serif, -apple-system;
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    
     p {
         font-size: 28px;
     }
@@ -48,6 +54,7 @@
         margin-left: auto;
     }
     
+    .pad-2 { padding: 2rem; }
     .pad-3 { padding: 3rem; }
     .pad-5 { padding: 5rem; }
     
@@ -159,6 +166,7 @@
     
     .row {
         display: flex;
+        /* border: 1px solid aqua; */
     }
     
     .col-0{width: auto;}
@@ -357,7 +365,7 @@
     }
     
     #steps {
-        padding: 5rem 7.5rem 0 7.5rem;
+        padding: 5rem 9rem 0 9rem;
         box-sizing: border-box;
     }
     .step-description {
@@ -366,6 +374,18 @@
         text-align: center;
         padding: 0 50px 0 50px;
     }
+
+    #step-feature{
+        justify-content: center;   
+        padding: 20px 0 50px 0;    
+    }
+    .step-feature-text{
+        align-self: center;
+        padding:10px;
+    }
+
+
+
     /* end how it works*/
     
     /* community section*/
