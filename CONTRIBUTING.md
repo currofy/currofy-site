@@ -1,5 +1,5 @@
 # Contributing 💪
-You can contribute to Currofy.com with issues and PRs. Simply filing issues for problems you encounter is a great way to contribute. Contributing implementations is greatly appreciated.
+You can contribute to Currofy.com with issues and PRs. Simply [filing issues](https://github.com/currofy/currofy-site/issues/new?assignees=&labels=&template=bug_report.md&title=) for problems you encounter is a great way to contribute. Contributing implementations is greatly appreciated.
 
 ### Fork the repository
 
@@ -30,7 +30,7 @@ You can check on which branch you are with `git branch`. You should see a list o
 
 
 ## Commit messages
-The project uses [Conventional Commits][https://www.conventionalcommits.org/en/v1.0.0-beta.4/] for commit messages in order to aid in automatic generation of changelogs. As described in the Conventional Commmits specification, commit messages should be of the form:
+The project uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) for commit messages in order to aid in automatic generation of changelogs. As described in the Conventional Commmits specification, commit messages should be of the form:
 
 <type>[optional scope]: <description>
 
@@ -45,4 +45,4 @@ where the type is one of
 * "test": for test-only changes
 * "docs": for docs-only changes
 * "revert": for reverting other changes
-* "perf", "style", "build", "ci", or "chore": as described in the [Angular specification][https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#type] for Conventional Commits.
+* "perf", "style", "build", "ci", or "chore": as described in the [Angular specification](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#type) for Conventional Commits.

@@ -2,9 +2,9 @@
 
 [![Join the chat at https://gitter.im/currofy/currofy-site](https://badges.gitter.im/currofy/currofy-site.svg)](https://gitter.im/currofy/currofy-site?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-This is the repo for the site  https://currofy.com The community driven platform to help you grow.
+This is the repo for the site  https://currofy.com - The community driven platform to help you grow. You can actually start growing by [helping](https://github.com/currofy/currofy-site/blob/dev/CONTRIBUTING.md) here :-)
 
-It's a simple and static generated site using https://github.com/gohugoio/hugo, HTML and vanilla CSS/JS. It's deployed an hosted on Netlify.
+It's a simple and static generated site using [Hugo](https://github.com/gohugoio/hugo), HTML and vanilla CSS/JS. It's deployed an hosted on Netlify.
 
 ## Stack so far
 - Hugo 
@@ -17,7 +17,7 @@ Feel free to suggest any tech, the site is just a playground.
 
 ## Found a bug? 👷‍♀️ Like to suggest an improvement? ☀️
 
-Thanks for letting us know! Please [file an issue](https://github.com/currofy/currofy-site/issues/new?assignees=&labels=&template=bug_report.md&title=) and a team member should reply shortly.
+Thanks for letting us know! Please see our [guidelines](https://github.com/currofy/currofy-site/blob/dev/CONTRIBUTING.md) and [file an issue](https://github.com/currofy/currofy-site/issues/new?assignees=&labels=&template=bug_report.md&title=) and a team member should reply shortly.
 
 ## Building the site 🏗
 
