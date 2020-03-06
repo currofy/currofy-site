@@ -78,7 +78,7 @@
     }
     
     .primary-button {
-        box-shadow: inset 0px 1px 0px 0px var(--color-gray);
+        box-shadow: inset 0px 1px 0px 0px #233a1f;
         background: linear-gradient(to bottom, var(--color-green) 5%, #0b3f02 100%);
         background-color: #186b09;
         border-radius: 3px;
@@ -96,7 +96,7 @@
     
     .primary-button:hover {
         background: linear-gradient(to bottom, #0b3f02 5%, var(--color-green) 100%);
-        background-color: var(--color-gray);
+        background-color: #233a1f;
     }
     
     .primary-button:active {
