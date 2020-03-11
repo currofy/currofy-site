@@ -10,137 +10,182 @@
     --color-beige: #EDE5D0;
     --color-beige-light: #f3efe6;
     --color-green: #2AA015;
-    }
+}
+        
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Opens Sans", Helvetica, sans-serif, -apple-system;
+}
     
+body {
+    background-color: #FFFFFF;
+}
     
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: "Opens Sans", Helvetica, sans-serif, -apple-system;
-   }
+h1 {
+    font-family: "Source Code Pro", Helvetica, sans-serif, -apple-system;
+    font-size: 56px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: "Source Code Pro", Helvetica, sans-serif, -apple-system;
+    font-size: 36px;
+    line-height: 1.2;
+}
     
-    body {
-        background-color: #FFFFFF;
-    }
+p {
+    font-size: 28px;
+}
     
+a {
+    text-decoration: none;
+    color: var(--color-beige);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+    
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+    
+.pad-2 { padding: 2rem; }
+.pad-3 { padding: 3rem; }
+.pad-5 { padding: 5rem; }
+        
+@media(max-width: 768px) {
     h1 {
-        font-family: "Source Code Pro", Helvetica, sans-serif, -apple-system;
-        font-size: 56px;
-        line-height: 1.2;
-    }
-    
-    h2 {
-        font-family: "Source Code Pro", Helvetica, sans-serif, -apple-system;
         font-size: 36px;
-        line-height: 1.2;
     }
-    
+
+    h2 {
+        font-size: 24px;
+    }
+
     p {
-        font-size: 28px;
+        font-size: 18px;
     }
-    
-    a {
-        text-decoration: none;
-        color: var(--color-beige);
+
+    .remove-on-mobile {
+        display: none;
     }
-    a:hover{
-        text-decoration: underline;
-    }
-    
+}
+
+@media (min-width: 768px) {
     .container {
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+        width: 750px;
     }
+}
     
-    .pad-2 { padding: 2rem; }
-    .pad-3 { padding: 3rem; }
-    .pad-5 { padding: 5rem; }
-    
-    
-    @media (min-width: 768px) {
-        .container {
-            width: 750px;
-        }
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
     }
+}
     
-    @media (min-width: 992px) {
-        .container {
-            width: 970px;
-        }
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
     }
+}
     
-    @media (min-width: 1200px) {
-        .container {
-            width: 1170px;
-        }
-    }
+.primary-button {
+    box-shadow: inset 0px 1px 0px 0px #233a1f;
+    background: linear-gradient(to bottom, var(--color-green) 5%, #0b3f02 100%);
+    background-color: #186b09;
+    border-radius: 3px;
+    /* border: 1px solid #505557; --> hace un efecto muy feo en el hover*/
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 6px 24px;
+    text-decoration: none;
+    /* text-shadow: 0px 1px 0px var(--color-gray); */
+}
     
+.primary-button:hover {
+    background: linear-gradient(to bottom, #0b3f02 5%, var(--color-green) 100%);
+    background-color: #233a1f;
+}
+    
+.primary-button:active {
+    position: relative;
+    top: 1px;
+}
+    
+@media(max-width: 768px) {
     .primary-button {
-        box-shadow: inset 0px 1px 0px 0px #233a1f;
-        background: linear-gradient(to bottom, var(--color-green) 5%, #0b3f02 100%);
-        background-color: #186b09;
-        border-radius: 3px;
-       /* border: 1px solid #505557; --> hace un efecto muy feo en el hover*/
-        display: inline-block;
-        cursor: pointer;
-        color: #ffffff;
-        font-family: "Open Sans", Helvetica, sans-serif;
-        font-size: 15px;
-        font-weight: 400;
-        padding: 6px 24px;
-        text-decoration: none;
-        /* text-shadow: 0px 1px 0px var(--color-gray); */
+        width: 100%;
+        height: 100%;
     }
+}
+
+.text-center {
+    text-align: center;
+}
     
-    .primary-button:hover {
-        background: linear-gradient(to bottom, #0b3f02 5%, var(--color-green) 100%);
-        background-color: #233a1f;
-    }
+.text-left {
+    text-align: left;
+}
     
-    .primary-button:active {
-        position: relative;
-        top: 1px;
-    }
+.text-right {
+    text-align: right;
+}
+
+.button-left {
+    text-align: left;
+}
     
-    .text-center {
+.button-right {
+    text-align: right;
+}
+
+@media(max-width: 768px) {
+    .button-left {
         text-align: center;
     }
+        
+    .button-right {
+        text-align: center;
+    }   
+}
     
-    .text-left {
-        text-align: left;
-    }
+.text {
+    color: black;
+}
     
-    .text-right {
-        text-align: right;
-    }
+.text-red {
+    color: var(--color-secondary);
+}
     
-    .text {
-        color: black;
-    }
-    
-    .text-red {
-        color: var(--color-secondary);
-    }
-    
-    .text-light{
-        color: #fff;
-    }
-    .text-green{
-        color: var(--color-green);
-    }
-    /* Credits: https://bryanhadaway.com/how-to-create-circles-with-css/# */
-    .circle{
-        width:100px;
-        height:100px;
-        border-radius:50px;
-        font-size:60px;
-        color: var(--color-secondary);
-        line-height:100px;
-        text-align:center;
-        background: var(--color-primary);
-    }
+.text-light{
+    color: #fff;
+}
+
+.text-green{
+    color: var(--color-green);
+}
+
+/* Credits: https://bryanhadaway.com/how-to-create-circles-with-css/# */
+.circle{
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    font-size:60px;
+    color: var(--color-secondary);
+    line-height:100px;
+    text-align:center;
+    background: var(--color-primary);
+}
+
     /* Arrow --> */
     .arrow {
         width: 230px;
@@ -301,56 +346,75 @@
         padding:15px 30px;
     }
     
+.top-section {
+    margin-top: 50px;
+    padding: 50px 50px 250px 50px;
+}
+    
+.mid-section {
+    background-color: var(--color-beige-light);
+    padding: 50px;
+}
+    
+.mid-section-light {
+    background-color: white;
+    padding: 50px;
+}
+ 
+@media(max-width: 768px) {
     .top-section {
-        margin-top: 50px;
-        padding: 50px 50px 250px 50px;
+        padding: 50px 0px 50px 0px;
     }
-    
+
     .mid-section {
-        background-color: var(--color-beige-light);
-        padding: 50px;
+        padding: 50px 0px 50px 0px;
     }
-    
+        
     .mid-section-light {
-        background-color: white;
-        padding: 50px;
+        padding: 50px 0px 50px 0px;
     }
+}
+
+.section-column {
+    flex: 33.33%;
+    padding: 5px;
+    border: 1px;
+    border-color: #0D1317;
+    margin: auto;
+}
     
-    .section-column {
-        flex: 33.33%;
-        padding: 5px;
-        border: 1px;
-        border-color: #0D1317;
-        margin: auto;
-    }
+/* home */
     
-    /* home */
+#home-content {
+    padding: 150px 0px 50px 0px;
+}
     
+#home-content p {
+    padding-top: 25px;
+}
+    
+#home-content .primary-button {
+    margin-top: 25px;
+}
+    
+@media(max-width: 768px) {
     #home-content {
-        padding: 150px 0px 50px 0px;
+        padding: 50px 0px 50px 0px;
     }
-    
-    #home-content p {
-        padding-top: 25px;
-    }
-    
-    #home-content .primary-button {
-        margin-top: 25px;
-    }
-    
-    /* Mid-Section: Tech Brands - The tech we love */
-    #tech-brands .items {
-        display: flex;
-      }
+}
+
+/* Mid-Section: Tech Brands - The tech we love */
+#tech-brands .items {
+    display: flex;
+}
       
-      #tech-brands .items img {
-        display: block;
-        margin: auto;
-        width: 60%;
-      }
-    
-    
-    /* end home*/
+#tech-brands .items img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+        
+/* end home*/
     
     /* why section*/
     #why-section {
