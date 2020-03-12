@@ -1,4 +1,4 @@
-baseURL = "https://currofy.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Currofy - Community Driven Talent Platform"
 disableKinds = ['taxonomyTerm']
