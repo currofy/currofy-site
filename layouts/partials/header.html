@@ -1,16 +1,22 @@
 <nav id="navbar" class="navbar">
-    <span class="navbar-toggle" id="js-navbar-toggle">
-        <i class="fas fa-bars"></i>
-    </span>
-    <a href="/" class="logo"><img src="/images/curro-logo.svg" alt="Currofy home" width="200"/></a>
-    <ul class="main-nav" id="js-menu">
-        <li>
-            <a href="/how-it-works" class="nav-links">How it works</a>
-        </li>
-        <li class="container">
-            <button onclick="openModal()" class="navbar-item primary-button">Talk to us!</button>
-        </li>
-    </ul>
+    <div class="container">
+        <div class="flex-container">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <a href="/" class="logo"><img src="/images/curro-logo.svg" alt="Currofy home" width="200"/></a>
+            <div class="flex-end">
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="/how-it-works" class="nav-links">How it works</a>
+                    </li>
+                    <li class="mobile-container">
+                        <button onclick="openModal()" class="navbar-item primary-button">Talk to us!</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </nav>
 <script>
     let mainNav = document.getElementById("js-menu");

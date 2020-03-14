@@ -74,6 +74,13 @@ a:hover{
     .remove-on-mobile {
         display: none;
     }
+
+    .mobile-container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 @media (min-width: 768px) {
@@ -241,8 +248,21 @@ a:hover{
         display: table;
     }
     
+@media(min-width: 768px) {
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-end {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        flex-grow: 1;
+    }
+}
+
 /* Navbar */
 #navbar {
+    background-color: white;
     position: fixed;
     width: 100%;
     top: 0;
@@ -285,15 +305,17 @@ a:hover{
 .main-nav li {
     text-align: center;
     margin: 15px auto;
+    padding: 12px 16px;
 }
   
 .main-nav a {
     position: relative;    
     color: black;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
-.main-nav > a:before {
+.main-nav a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -308,7 +330,7 @@ a:hover{
     color: black;
 }
 
-.main-nav > a:hover:before {
+.main-nav a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
