@@ -1,19 +1,28 @@
-<nav id="navbar" class="navbar-not-scrolled">
+<nav id="navbar" class="navbar">
     <div class="container">
-        <div class="row">
-            <div class="navbar-logo">
-                <a href="/"><img src="/images/curro-logo.svg" alt="Currofy home" width="200"/></a>
-            </div>
-            <div class="navbar-items-list">
-                <ul class="navbar-items">
-                    <li class="navbar-item"><a href="/how-it-works">How it works</a></li>
-                    <!-- <li class="navbar-item"><a href="/why">Why Currofy</a></li>
-                    <li class="navbar-item"><a href="/community-driven">Community driven</a></li> -->
-                    <li class="navbar-item">
+        <div class="flex-container">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <a href="/" class="logo"><img src="/images/curro-logo.svg" alt="Currofy home" width="200"/></a>
+            <div class="flex-end">
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="/how-it-works" class="nav-links">How it works</a>
+                    </li>
+                    <li class="mobile-container">
                         <button onclick="openModal()" class="navbar-item primary-button">Talk to us!</button>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-</nav> 
+</nav>
+<script>
+    let mainNav = document.getElementById("js-menu");
+    let navBarToggle = document.getElementById("js-navbar-toggle");
+
+    navBarToggle.addEventListener("click", function() {
+        mainNav.classList.toggle("active");
+    });
+</script>
