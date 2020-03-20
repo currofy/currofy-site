@@ -377,6 +377,12 @@ a:hover{
         margin: 0;
     }
   
+    .main-nav-li {
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+    }
+
     .nav-links {
         margin-left: 40px;
     }
