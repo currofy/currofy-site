@@ -487,15 +487,29 @@ a:hover {
   }
 }
 
-/* Mid-Section: Tech Brands - The tech we love */
-#tech-brands .items {
-  display: flex;
+.slider {
+  padding: 50px 0px;
+	height: 100px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
 }
 
-#tech-brands .items img {
-  display: block;
-  margin: auto;
-  width: 60%;
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	50% { transform: translateX(calc(-250px * 2))}
+}
+
+.slide-track {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slide {
+  height: 100px;
+  width: 100px;
+  padding: 0 20px;
 }
 
 /* end home*/
