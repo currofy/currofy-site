@@ -200,6 +200,7 @@ a:hover {
     line-height:100px;
     text-align:center;
     background: var(--color-primary);
+    display: inline-block;
 }
 
 /* Arrow --> */
@@ -520,21 +521,24 @@ a:hover {
   justify-content: space-between;
   max-width: 100%;
   position: relative;
-  background-color: blue;
+  padding: 100px 0px 24px 0px;
 }
 
 #steps .step-box {
   position: relative;
   width: 31.5%;
   text-align: center;
-  background-color: red;
 }
 
-.step-description {
-  margin-top: 20px;
+.step-box-arrow {
+  display: inline-block;
+
+}
+
+.step-box-header {
+  padding: 44px 0px 24px 0px;
   box-sizing: border-box;
   text-align: center;
-  padding: 0 50px 0 50px;
 }
 
 #step-feature {
